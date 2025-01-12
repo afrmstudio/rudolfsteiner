@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudolf Steiner - A Life of Wisdom and Vision</title>
+    <style>
+        :root {
+            --primary-color: #2c4a52;
+            --secondary-color: #537072;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/steiner-portrait.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .dates {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+        }
+
+        .section-dark {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            padding: 2rem;
+            background: var(--light-bg);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.5rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .book-card h4 {
+            margin: 1rem 0;
+            color: var(--primary-color);
+        }
+
+        .book-year {
+            font-style: italic;
+            color: var(--secondary-color);
+        }
+
+        .architecture-showcase {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .building-feature {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .building-feature:nth-child(even) {
+            direction: rtl;
+        }
+
+        .building-feature > * {
+            direction: ltr;
+        }
+
+        .building-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .building-info {
+            padding: 2rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .building-feature {
+                grid-template-columns: 1fr;
+            }
+            .building-feature:nth-child(even) {
+                direction: ltr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Rudolf Steiner</h1>
+            <p class="dates">1861 - 1925</p>
+            <p>Philosopher, Social Reformer, Architect, and Founder of Anthroposophy</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Legacy of Wisdom</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Anthroposophy</h3>
+                    <p>Steiner's spiritual philosophy that integrates scientific methodology with inner development and spiritual insight.</p>
+                </div>
+                <div class="card">
+                    <h3>Waldorf Education</h3>
+                    <p>A holistic educational approach that nurtures the physical, emotional, and spiritual development of children.</p>
+                </div>
+                <div class="card">
+                    <h3>Biodynamic Agriculture</h3>
+                    <p>An innovative approach to organic farming that treats farms as unified organisms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/Rudolf_Steiner_1905.jpg" alt="Rudolf Steiner Portrait" />
+                </div>
+                <div class="gallery-item">
+                    <img src="images/First_Goetheanum.jpg" alt="First Goetheanum" />
+                </div>
+                <div class="gallery-item">
+                    <img src="images/steiner_lecture.jpg" alt="Steiner giving a lecture" />
+                </div>
+                <div class="gallery-item">
+                    <img src="images/first_waldorf_school.jpg" alt="First Waldorf School" />
+                </div>
+                <div class="gallery-item">
+                    <img src="images/steiner_study.jpg" alt="Steiner's Study" />
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Second_Goetheanum.jpg" alt="Second Goetheanum" />
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Memorial_Rudolf_Steiner.jpg" alt="Second Goetheaum2" />
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Second_Goetheanum2.jpg" alt="Second Goetheaum2" />
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Major Works</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <h4>The Philosophy of Freedom</h4>
+                    <p class="book-year">1894</p>
+                    <p>A foundational work exploring human consciousness and freedom.</p>
+                </div>
+                <div class="book-card">
+                    <h4>How to Know Higher Worlds</h4>
+                    <p class="book-year">1904</p>
+                    <p>A practical guide to spiritual development and inner transformation.</p>
+                </div>
+                <div class="book-card">
+                    <h4>Outline of Esoteric Science</h4>
+                    <p class="book-year">1909</p>
+                    <p>A comprehensive presentation of anthroposophical teachings.</p>
+                </div>
+                <div class="book-card">
+                    <h4>The Education of the Child</h4>
+                    <p class="book-year">1907</p>
+                    <p>Foundational text for Waldorf education methodology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Architectural Legacy</h2>
+            <div class="architecture-showcase">
+                <div class="building-feature">
+                    <img src="images/First_Goetheanum.jpg" alt="First Goetheanum" class="building-image" />
+                    <div class="building-info">
+                        <h3>First Goetheanum (1919-1922)</h3>
+                        <p>A masterpiece of organic architecture carved primarily from wood, the First Goetheanum embodied Steiner's principle of metamorphosis in architecture. Though destroyed by fire in 1922, its innovative design influenced architectural thinking worldwide.</p>
+                    </div>
+                </div>
+                <div class="building-feature">
+                    <img src="images/Second_Goetheanum.jpg" alt="Second Goetheanum" class="building-image" />
+                    <div class="building-info">
+                        <h3>Second Goetheanum (1924-Present)</h3>
+                        <p>Built in concrete, the Second Goetheanum represents a revolutionary approach to architectural form. Its sculptural qualities and innovative use of concrete continue to inspire architects and artists today.</p>
+                    </div>
+                </div>
+                <div class="building-feature">
+                    <img src="images/glasshouse.jpg" alt="Glass House" class="building-image" />
+                    <div class="building-info">
+                        <h3>The Glass House</h3>
+                        <p>A unique example of Steiner's architectural principles applied to a smaller scale, featuring his characteristic use of angular forms and innovative treatment of materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="quote">
+                "Our highest endeavor must be to develop free human beings who are able of themselves to impart purpose and direction to their lives."
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Life Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>1861</h3>
+                    <p>Born in Kraljevec, Austrian Empire (modern-day Croatia)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1883-1891</h3>
+                    <p>Studies at the Vienna Institute of Technology</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1902</h3>
+                    <p>Becomes leader of the German Section of the Theosophical Society</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1913</h3>
+                    <p>Founds the Anthroposophical Society</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1919</h3>
+                    <p>Establishes the first Waldorf School in Stuttgart</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1925</h3>
+                    <p>Passes away in Dornach, Switzerland</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added citation section -->
+    <section class="section">
+        <div class="container">
+            <div class="quote">
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rudolf Steiner Memorial Site</p>
+    </footer>
+</body>
+</html>
